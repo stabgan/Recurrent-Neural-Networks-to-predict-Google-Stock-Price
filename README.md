@@ -63,7 +63,7 @@ Variants in LSTM_better_models/ explore 1 vs 4 layers, 20 vs 60 timesteps
 └── README.md
 ```
 
-## Tech Stack
+## 🛠 Tech Stack
 
 | | Technology | Purpose |
 |---|---|---|
@@ -115,11 +115,10 @@ Comparison across model configurations (red = actual, blue = predicted):
 
 Longer timestep windows (60 vs 20) produce smoother, more accurate predictions. Deeper networks (4 layers) capture more complex temporal patterns.
 
-## Known Issues
+## ⚠️ Known Issues
 
 - The model only uses opening price as a feature. Adding volume, high/low, and close prices could improve predictions.
 - No train/validation split — all training data is used for fitting, so there's no early stopping or overfitting detection.
-- Hardcoded dataset size (1258 rows) — scripts assume the exact CSV row count rather than computing it dynamically.
 
 ## License
 
